@@ -10,20 +10,20 @@
     <script type="text/javascript">
     $(document).ready(function(){
 
-      $(".login-option .styled").click(function(){
-        $(this).hide();
-        $(".input-option").fadeIn(1000);
-      });
-      $(".input-option .styled").click(function(){
-        alert("You have Successfully Logged In");
-        $(".input-option").hide();
-        $(".logout-option").fadeIn(1000);
-      });
-      $(".logout-option").click(function(){
-        alert("You have Successfully Logged Out");
-        $(".logout-option").hide();
-        $(".login-option .styled").fadeIn(1000);
-      });
+      // $(".login-option .styled").click(function(){
+      //   $(this).hide();
+      //   $(".input-option").fadeIn(1000);
+      // });
+      // $(".input-option .styled").click(function(){
+      //   alert("You have Successfully Logged In");
+      //   $(".input-option").hide();
+      //   $(".logout-option").fadeIn(1000);
+      // });
+      // $(".logout-option").click(function(){
+      //   alert("You have Successfully Logged Out");
+      //   $(".logout-option").hide();
+      //   $(".login-option .styled").fadeIn(1000);
+      // });
       $("input.username").focus(function(){
         $(this).css("background-color", "#E3E3E3");
       });
@@ -43,190 +43,183 @@
 
 </head>
 <body>
-    <div class="page">
-        <header>
-            <ul class="menu-list">
-                <li class="menu-option">
-                    <div class="one"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px; margin-top: -1px;">menu</i></a></div>
-                    <div class="two">SECTIONS</div>
-                </li>
-                <li class="search-option">
-                    <div class="three"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px;">search</i></a></div>
-                    <div class="four">SEARCH</div>
-                </li>
-                <li class="input-option">
-                  <ul>
-                    <li><input type="text" class="username" placeholder="Username"></li>
-                    <li><input type="text" class="password" placeholder="Password"></li>
-                    <li><input type="submit" class="styled" value="LOG IN"></li>
-                  </ul>
-                </li>
-                <li class="login-option">
-                    <input type="button" value="LOG IN" class="styled" />
-                </li>
-                <li class="logout-option">
-                    <input type="button" value="LOG OUT" class="styled" />
-                </li>
-                <li class="settings-option">
-                    <a href="#" target="_self"><i class="material-icons" style="font-size: 20px;">settings</i></a>
-                </li>
-            </ul>
-        </header>
-        <div class="header-container">
-            <header class="header">
-                <div class="us-int"><img src=NYT_images/us_int.png alt="HTML map" border="0" usemap="#html3"/>
-                    <map name="html3">
-                        <area shape="rect" coords="10,10,32,25" href="#" alt="US Link" target="_self"/>
-                        <area shape="rect" coords="43,10,114,25" href="#" alt="Int Link" target="_self"/>
-                        <area shape="rect" coords="126,10,146,25" href="#" alt="Chinese Link" target="_self"/>
-                    </map>
-                </div>
-            </header>
-        </div>
-        <div class="separator">
-            <hr color="#E0E3E7" size="1"/>
-        </div>
-        <div class="header-container">
-            <header class="header">
-                <div class="title"><img src=NYT_images/headline.png alt="HTML map" border="0" usemap="#html4"/>
-                    <map name="html4">
-                        <area shape="rect" coords="5,9,383,55" href="#" alt="Homepage Link" target="_self"/>
-                    </map>
-                </div>
-                <div class="sub-header">Thursday, October 8, 2015 &nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">Today's
-                    Paper</a>&nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">Video</a> &nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">63&degF</a> &nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">Shanghai 0.00%</a>
-                </div>
-            </header>
-        </div>
-        <header class="sections-container">
-            <nav>
-               <ul class="sections">
-                  <li><a href="#" target="_self">World</li>
-                  <li><a href="#" target="_self">U.S.</li>
-                  <li><a href="#" target="_self">Politics</li>
-                  <li><a href="#" target="_self">N.Y.</li>
-                  <li><a href="#" target="_self">Business</li>
-                  <li><a href="#" target="_self">Opinion</li>
-                  <li><a href="#" target="_self">Tech</li>
-                  <li><a href="#" target="_self">Science</li>
-                  <li><a href="#" target="_self">Health</li>
-                  <li><a href="#" target="_self">Sports</li>
-                  <li><a href="#" target="_self">Arts</li>
-                  <li><a href="#" target="_self">Style</li>
-                  <li><a href="#" target="_self">Food</li>
-                  <li><a href="#" target="_self">Travel</li>
-                  <li><a href="#" target="_self">Magazine</li>
-                  <li><a href="#" target="_self">T Magazine</li>
-                  <li><a href="#" target="_self">Real Estate</li>
-              </ul>
-            </nav>
-        </header>
-        <div class="all-articles">
-            <div class="ls-main-articles-container">
-                <div class="ls-main-articles">
-                    <article class="ls-article-1">
-                        <div class="pre-headline">NEWS ANALYSIS</div>
-                        <div class="l1-headline"><a href="#" target="_self">A House, and a Republican Party, Divided Against Itself</a></div>
-                        <div class="author-and-time">
-                            <div class="author">By CARL HULSE</div>
-                            <time class="time" datetime="2015-10-8 20:13-0500">&nbsp 17 minutes ago</time>
-                        </div>
-                        <div class="content">Kevin McCarthy's decision to drop out of the race for speaker echoed the
-                            disarray in the House 17 years ago, but some Republicans worry that this time may be worse.
-                        </div>
-                    </article>
-                    <article class="ls-article-2">
-                        <div class="l2-headline"><a href="#" target="_self">McCarthy Drops Out of Speaker's Race, Adding to Chaos</a></div>
-                        <div class="author">By JENNIFER STEINHAUER and DAVID M. HERSZENHORN</div>
-                        <time class="time" datetime="2015-10-8 20:01-0500">8:01 PM ET</time>
-                        <figure class="floated-image"><img src="NYT_images/mccarthy_pic.png"></figure>
-                        <div class="content">Representative Kevin McCarthy abruptly took himself out of the race to succeed
-                            John A. Boehner as House speaker, leaving shocked members with no clear path forward.
-                        </div>
-                        <div class="blue-comments"><a href="#" target="_self">- 1311 Comments</a></div>
-                        <div class="pre-headline"><a href="#" target="_self">RELATED COVERAGE</a></div>
-                    </article>
-                </div>
-            </div>
-            <div class="c-main-articles-container">
-                <div class="c-main-articles">
-                    <article class="c-article-1">
-                        <figure class="article-image"><img src="NYT_images/hospital_pic.png">
+  <div class="page">
+    <div class="wrapper">
+      <header class="menu-list">
+          <div class="left">
+            <div class="option-one"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px; margin-top: -1px;">menu</i></a></div>
+            <div class="option-two"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px;">search</i></a></div>
+          </div>
+          <div class="right">
+            <div class="option-three"><input type="button" value="Log In" class="styled" /></div>
+            <div class="option-four"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px;">settings</i></a></div>
+          </div>
+      </header>
+      <header class="header">
+          <div class="us-int"><img src=NYT_images/us_int.png alt="HTML map" border="0" usemap="#html3"/>
+              <map name="html3">
+                  <area shape="rect" coords="10,10,32,25" href="#" alt="US Link" target="_self"/>
+                  <area shape="rect" coords="43,10,114,25" href="#" alt="Int Link" target="_self"/>
+                  <area shape="rect" coords="126,10,146,25" href="#" alt="Chinese Link" target="_self"/>
+              </map>
+          </div>
+      </header>
+      <div class="separator">
+          <hr color="#E0E3E7" size="1"/>
+      </div>
+      <header class="header-2">
+          <div class="title"><img src=NYT_images/headline.png alt="HTML map" border="0" usemap="#html4"/>
+              <map name="html4">
+                  <area shape="rect" coords="5,9,383,55" href="#" alt="Homepage Link" target="_self"/>
+              </map>
+          </div>
+          <div class="sub-header">Thursday, October 8, 2015 &nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">Today's
+              Paper</a>&nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">Video</a> &nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">63&degF</a> &nbsp&nbsp|&nbsp&nbsp <a href="#" target="_self">Shanghai 0.00%</a>
+          </div>
+      </header>
+      <nav class="nav-sections">
+         <div><a href="#" target="_self">World</div>
+          <div><a href="#" target="_self">U.S.</div>
+          <div><a href="#" target="_self">Politics</div>
+          <div><a href="#" target="_self">N.Y.</div>
+          <div><a href="#" target="_self">Business</div>
+          <div><a href="#" target="_self">Opinion</div>
+          <div><a href="#" target="_self">Tech</div>
+          <div><a href="#" target="_self">Science</div>
+          <div><a href="#" target="_self">Health</div>
+          <div><a href="#" target="_self">Sports</div>
+          <div><a href="#" target="_self">Arts</div>
+          <div><a href="#" target="_self">Style</div>
+          <div><a href="#" target="_self">Food</div>
+          <div><a href="#" target="_self">Style</div>
+          <div><a href="#" target="_self">Travel</div>
+          <div><a href="#" target="_self">Magazine</div>
+          <div><a href="#" target="_self">T Magazine</div>
+          <div><a href="#" target="_self">Real Estate</div>
+          <div><a href="#" target="_self">Video</div>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+      <div class="all-articles">
+          <div class="ls-main-articles-container">
+              <div class="ls-main-articles">
+                  <article class="ls-article-1">
+                      <div class="pre-headline">NEWS ANALYSIS</div>
+                      <div class="l1-headline"><a href="#" target="_self">A House, and a Republican Party, Divided Against Itself</a></div>
+                      <div class="author-and-time">
+                          <div class="author">By CARL HULSE</div>
+                          <time class="time" datetime="2015-10-8 20:13-0500">&nbsp 17 minutes ago</time>
+                      </div>
+                      <div class="content">Kevin McCarthy's decision to drop out of the race for speaker echoed the
+                          disarray in the House 17 years ago, but some Republicans worry that this time may be worse.
+                      </div>
+                  </article>
+                  <article class="ls-article-2">
+                      <div class="l2-headline"><a href="#" target="_self">McCarthy Drops Out of Speaker's Race, Adding to Chaos</a></div>
+                      <div class="author">By JENNIFER STEINHAUER and DAVID M. HERSZENHORN</div>
+                      <time class="time" datetime="2015-10-8 20:01-0500">8:01 PM ET</time>
+                      <figure class="floated-image"><img src="NYT_images/mccarthy_pic.png"></figure>
+                      <div class="content">Representative Kevin McCarthy abruptly took himself out of the race to succeed
+                          John A. Boehner as House speaker, leaving shocked members with no clear path forward.
+                      </div>
+                      <div class="blue-comments"><a href="#" target="_self">- 1311 Comments</a></div>
+                      <div class="pre-headline"><a href="#" target="_self">RELATED COVERAGE</a></div>
+                  </article>
+              </div>
+          </div>
+          <div class="c-main-articles-container">
+              <div class="c-main-articles">
+                  <article class="c-article-1">
+                      <figure class="article-image">
+                         <img src="NYT_images/hospital_pic.png" class="pic-width">
                             <figcaption class="image-caption">The intensive care unit at Mercy Hospital Independence in Kansas, which
                                 closes this weekend. Without patients, the unit has been used for storage.</figcaption>
                             <figcaption class="author">Amy Stroth for the New York Times</figcaption>
-                        </figure>
-                        <div class="c1-headline"><a href="#" target="_self">Hospital Crisis Emerges in Rural America</a></div>
-                        <div class="author-and-time">
-                             <div class="author">By MITCH SMITH and ABBY GOODNOUGH</div>
-                             <time class="time" datetime="2015-10-8 20:13-0500">&nbsp 8:13 PM ET</time>
-                        </div>
-                        <div class="content">This weekend, Mercy Independence Hospital in Kansas will join dozens of rural
-                            hospitals that have closed in the last five years because of financial challenges and shrinking populations.</div>
-                        <br/><hr color="#D9D6D6" size="2"/>
-                    </article>
-                    <article class="c-article-2">
-                        <div class="floated-image"><img src="NYT_images/briefing_pic.png"></div>
-                        <div class="c2-headline"><a href="#" target="_self">Your Evening Briefing</a></div>
-                        <div class="author">By ANDREA KANNAPELL and</div>
-                        <div class="author-and-time">
-                            <div class="author">SANDRA STEVENSON</div>
-                            <time class="time" datetime="2015-10-8 17:55-0500">&nbsp 5:55 PM ET</time>
-                        </div>
-                        <div class="content">Here's what you need to know at the end of the day.</div>
-                        <figure class="pictures-of-the-day"><a href="#" target="_self">&nbsp-&nbsp&nbspPictures of the Day: Israel and Elsewhere</a>
-                            <figcaption class="evening-briefing-pic-citation">Doug MGills NYT</figcaption>
-                        </figure>
-                        <hr color="#BFBFBF" size="1"/>
-                    </article>
-                </div>
-            </div>
-            <div class="rs-main-articles-container">
-                <div class="rs-main-articles">
-                    <div class="rs-article-1">
-                        <header class="opinion-pages-title"><a href="#" target="_self">The Opinion Pages</a></header>
-                        <div class="opinion-articles">
-                            <article class="opinion-article-1">
-                                <div class="r1-opinion-headline"><a href="#" target="_self">VW Needs to Come Clean, Now</a></div>
-                                <figure class="floated-image"><img src="NYT_images/VW_pic.png"></figure>
-                                <div class="author">By THE EDITORIAL<br/> BOARD</div>
-                                <div class="content">Nobody believes that only a handful of managers knew about the elaborate scheme to cheat on emissions tests.</div>
-                                <ul class="opinion-list">
-                                  <li class="opinion-link-1" style="list-style-type: disc"><a href="#" target="_self"> Editorial: Cultural Destruction as a War Crime</a></li>
-                                  <li class="opinion-link"style="list-style-type: disc"><a href="#" target="_self"> Room for Debate: Reparations for Slavery in Former Colonies</a></li>
-                                  <li class="opinion-link" style="list-style-type: disc"><a href="#" target="_self"> Join us on Facebook &gt&gt</a></li>
-                                </ul>
-                            </article>
-                            <article class="opinion-article-2">
-                                <div class="pre-headline"><a href="#" target="_self">THE STONE</a></div>
-                                <div class="r1-opinion-headline"><a href="#" target="_self">The Invisible Asian</a></div>
-                                <figure class="floated-image"><img src="NYT_images/asian_pic.png"></figure>
-                                <div class="author">By GEORGE YANCY and DAVID HAEKWON KIM</div>
-                                <div class="content">Often hoodwinked by the label of the "model minority," we must resist the stereotype of Asian passivity.</div>
-                                <ul class="opinion-list">
-                                  <li class="opinion-link-1" style="list-style-type: disc"><a href="#" target="_self"> Blow: With Ben Carson, the Doctor is Always</a></li>
-                                  <li class="opinion-link" style="list-style-type: disc"><a href="#" target="_self"> Cohen: Indifference Kills</a></li>
-                                  <li class="opinion-link" style="list-style-type: disc"><a href="#" target="_self"> Collins: Too Many Bushes</a></li>
-                                  <li class="opinion-link" style="list-style-type: disc"><a href="#" target="_self"> Kristof: 3 Peerless Republicans for President</a></li>
-                                </ul>
-                            </article>
-                        </div>
-                    </div>
-                    <hr color="#CFCFCF" size="5"/>
-                    <div class="rs-article-2">
-                        <header class="watching-headline"><a href="#" target="_self">Watching</a></header>
-                        <hr color="#BFBFBF" size="1"/>
-                        <div class="divide">
-                            <time class="one-hour" datetime="2015-10-8 19:30-0500">1h</time>
-                            <figure class="floated-image"> &nbsp&nbsp&nbsp <img src="NYT_images/meteor_pic.png">
-                                <figcaption class="watching-pic-citation">ASSOCIATED PRESS PHOTO/SCANPIX, P-M HEDEN</figcaption>
-                                <figcaption class="watching-description">The annual <a href="#" target="_self"><b>Draconid meteor shower</b></a> peaks Thursday night and is likely to be helped by good visibility and a</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                      </figure>
+                      <div class="c1-headline"><a href="#" target="_self">Hospital Crisis Emerges in Rural America</a></div>
+                      <div class="author-and-time">
+                           <div class="author">By MITCH SMITH and ABBY GOODNOUGH</div>
+                           <time class="time" datetime="2015-10-8 20:13-0500">&nbsp 8:13 PM ET</time>
+                      </div>
+                      <div class="content">This weekend, Mercy Independence Hospital in Kansas will join dozens of rural
+                          hospitals that have closed in the last five years because of financial challenges and shrinking populations.</div>
+                      <br/><hr color="#D9D6D6" size="2"/>
+                  </article>
+                  <article class="c-article-2">
+                      <figure class="floated-image-2"><img src="NYT_images/briefing_pic.png" class="pic-width">
+                          <figcaption class="evening-briefing-pic-citation">Doug MGills NYT</figcaption>
+                      </figure>
+                      <div class="c2-headline"><a href="#" target="_self">Your Evening Briefing</a></div>
+                      <div class="author">By ANDREA KANNAPELL and</div>
+                      <div class="author-and-time">
+                          <div class="author">SANDRA STEVENSON</div>
+                          <time class="time" datetime="2015-10-8 17:55-0500">&nbsp 5:55 PM ET</time>
+                      </div>
+                      <div class="content">Here's what you need to know at the end of the day.</div>
+                      <div class="pictures-of-the-day"><a href="#" target="_self">&nbsp-&nbsp&nbspPictures of the Day: Israel and Elsewhere</a></div>
+                  </article>
+              </div>
+          </div>
+          <div class="rs-main-articles-container">
+              <div class="rs-main-articles">
+                  <div class="rs-article-1">
+                      <header class="opinion-pages-title"><a href="#" target="_self">The Opinion Pages</a></header>
+                      <div class="opinion-articles">
+                          <article class="opinion-article-1">
+                              <div class="r1-opinion-headline"><a href="#" target="_self">VW Needs to Come Clean, Now</a></div>
+                              <figure class="floated-image"><img src="NYT_images/VW_pic.png"></figure>
+                              <div class="author">By THE EDITORIAL<br/> BOARD</div>
+                              <div class="content">Nobody believes that only a handful of managers knew about the elaborate scheme to cheat on emissions tests.</div>
+                              <ul class="opinion-list">
+                                <li class="opinion-link-1" style="list-style-type: disc"><a href="#" target="_self"><span style="font-size: 12px">Editorial: Cultural Destruction as a War Crime</span></a></li>
+                                <li class="opinion-link"style="list-style-type: disc"><a href="#" target="_self"><span style="font-size: 12px">Room for Debate: Reparations for Slavery in Former Colonies</span></a></li>
+                                <li class="opinion-link" style="list-style-type: disc"><a href="#" target="_self"><span style="font-size: 12px">Join us on Facebook &gt&gt</span></a></li>
+                              </ul>
+                          </article>
+                          <article class="opinion-article-2">
+                              <div class="pre-headline"><a href="#" target="_self">THE STONE</a></div>
+                              <div class="r1-opinion-headline"><a href="#" target="_self">The Invisible Asian</a></div>
+                              <figure class="floated-image"><img src="NYT_images/asian_pic.png"></figure>
+                              <div class="author">By GEORGE YANCY and DAVID HAEKWON KIM</div>
+                              <div class="content">Often hoodwinked by the label of the "model minority," we must resist the stereotype of Asian passivity.</div>
+                              <ul class="opinion-list">
+                                <li class="opinion-link-1"<a href="#" target="_self"><span style="font-size: 12px">Blow: With Ben Carson, the Doctor is Always</span></a></li>
+                                <li class="opinion-link"<a href="#" target="_self"><span style="font-size: 12px">Cohen: Indifference Kills</span></a></li>
+                                <li class="opinion-link"<a href="#" target="_self"><span style="font-size: 12px">Collins: Too Many Bushes</span></a></li>
+                                <li class="opinion-link"<a href="#" target="_self"><span style="font-size: 12px">Kristof: 3 Peerless Republicans for President</span></a></li>
+                              </ul>
+                          </article>
+                      </div>
+                  </div>
+                  <!-- <hr color="#CFCFCF" size="5"/> -->
+                  <div class="rs-article-2">
+                      <header class="watching-headline"><a href="#" target="_self">Watching</a></header>
+                      <hr color="#BFBFBF" size="1"/>
+                      <div class="divide">
+                          <time class="one-hour" datetime="2015-10-8 19:30-0500">1h</time>
+                          <figure class="floated-image"> &nbsp&nbsp&nbsp <img src="NYT_images/meteor_pic.png">
+                              <figcaption class="watching-pic-citation">ASSOCIATED PRESS PHOTO/SCANPIX, P-M HEDEN</figcaption>
+                              <figcaption class="watching-description">The annual <a href="#" target="_self"><b>Draconid meteor shower</b></a> peaks Thursday night and is likely to be helped by good visibility and a</figcaption>
+                          </figure>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>
+
+<!-- <div class="input-option">
+  <div>
+    <div><input type="text" class="username" placeholder="Username"></div>
+    <div><input type="text" class="password" placeholder="Password"></div>
+    <div><input type="submit" class="styled" value="LOG IN"></div>
+  </div>
+</div> -->
+
+<!-- <div class="logout-option">
+    <input type="button" value="LOG OUT" class="styled" />
+</div> -->
