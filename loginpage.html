@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login NYT</title>
+    <link rel='stylesheet' type= "text/css" href="loginpage.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+      const emailInput = document.querySelector(".email");
+      const passwordInput = document.querySelector(".password");
+      const submitbtn = document.querySelector(".styled-3");
+
+      submitbtn.addEventListener("click", presssubmit);
+
+      function presssubmit(e){
+        e.preventDefault();
+        if (emailInput.value == '' && passwordInput.value == '') {
+          $(".error-1").show();
+          $(".error-2").show();
+          $(".email").addClass("input-error");
+          $(".password").addClass("input-error");
+        } else if (emailInput.value == '') {
+          $(".error-1").show();
+          $(".email").addClass("input-error");
+        } else if (passwordInput.value == '') {
+          $(".error-2").show();
+          $(".password").addClass("input-error");
+        } else {
+          alert("Welcome " + emailInput.value);
+        }
+      }
+    });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img class="pic-height" src=NYT_images/headline.png alt="HTML map" border="0" usemap="#html4"/>
+          <map name="html4">
+              <area shape="rect" coords="5,9,383,55" href="#" alt="Homepage Link" target="_self"/>
+          </map>
+    </header>
+    <div class="main">
+      <div class="prompt">Log in to your account</div>
+      <div><button name="google" class="styled">Continue with Google</button></div>
+      <div><button name="facebook" class="styled-2">Continue with Facebook</button></div>
+      <div class="or-email">Or use your email</div>
+      <form class="discount" action="index.html" method="post">
+          <label for="email" class="email-label">Email Address</label>
+          <input type="text" class="email" name="email">
+          <div class="error-1">Please enter your username or email address</div>
+          <label for="password" class="password-label">Password</label>
+          <input type="password" class="password" name="password">
+          <div class="error-2">Please enter a password</div>
+          <div class="flex">
+            <div>
+              <input type="checkbox" class="remember" name="remember">
+              <label for="remember">Remeber me</label>
+            </div>
+            <div class="forgot"><a href="#" target="_self">Forgot your password?</a></div>
+          </div>
+          <div class="error-3">The email address and password you entered don't match any NYTimes account. Please try again.</div>
+          <input class="styled-3" value="Log In" type="submit">
+          <div class="sign-up">Don't have a Times account? <a href="#" target="_self" class="create">Create one</a></div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -10,20 +10,6 @@
     <script type="text/javascript">
     $(document).ready(function(){
 
-      // $(".login-option .styled").click(function(){
-      //   $(this).hide();
-      //   $(".input-option").fadeIn(1000);
-      // });
-      // $(".input-option .styled").click(function(){
-      //   alert("You have Successfully Logged In");
-      //   $(".input-option").hide();
-      //   $(".logout-option").fadeIn(1000);
-      // });
-      // $(".logout-option").click(function(){
-      //   alert("You have Successfully Logged Out");
-      //   $(".logout-option").hide();
-      //   $(".login-option .styled").fadeIn(1000);
-      // });
       $("input.username").focus(function(){
         $(this).css("background-color", "#E3E3E3");
       });
@@ -37,11 +23,18 @@
         $(this).css("background-color", "white");
       });
       $("ul.opinion-list").css({"display" : "flex", "flex-direction" : "column"});
+
+      $(".nav-sections").children().mouseenter(function(){
+        $(this).css("background", "#F7F7F7");
+      });
+      $(".nav-sections").children().mouseleave(function(){
+        $(this).css("background", "white");
+      });
+
     });
-
     </script>
-
 </head>
+
 <body>
   <div class="page">
     <div class="wrapper">
@@ -51,7 +44,7 @@
             <div class="option-two"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px;">search</i></a></div>
           </div>
           <div class="right">
-            <div class="option-three"><input type="button" value="Log In" class="styled" /></div>
+            <div class="option-three"><a href="loginpage.html" target="_self"><button value="Log In" class="styled">Log In</button></a></div>
             <div class="option-four"><a href="#" target="_self"><i class="material-icons" style="font-size: 20px;">settings</i></a></div>
           </div>
       </header>
@@ -64,11 +57,8 @@
               </map>
           </div>
       </header>
-      <div class="separator">
-          <hr color="#E0E3E7" size="1"/>
-      </div>
       <header class="header-2">
-          <div class="title"><img src=NYT_images/headline.png alt="HTML map" border="0" usemap="#html4"/>
+          <div class="title"><img class="test" src=NYT_images/headline.png alt="HTML map" border="0" usemap="#html4"/>
               <map name="html4">
                   <area shape="rect" coords="5,9,383,55" href="#" alt="Homepage Link" target="_self"/>
               </map>
@@ -78,25 +68,25 @@
           </div>
       </header>
       <nav class="nav-sections">
-         <div><a href="#" target="_self">World</div>
-          <div><a href="#" target="_self">U.S.</div>
-          <div><a href="#" target="_self">Politics</div>
-          <div><a href="#" target="_self">N.Y.</div>
-          <div><a href="#" target="_self">Business</div>
-          <div><a href="#" target="_self">Opinion</div>
-          <div><a href="#" target="_self">Tech</div>
-          <div><a href="#" target="_self">Science</div>
-          <div><a href="#" target="_self">Health</div>
-          <div><a href="#" target="_self">Sports</div>
-          <div><a href="#" target="_self">Arts</div>
-          <div><a href="#" target="_self">Style</div>
-          <div><a href="#" target="_self">Food</div>
-          <div><a href="#" target="_self">Style</div>
-          <div><a href="#" target="_self">Travel</div>
-          <div><a href="#" target="_self">Magazine</div>
-          <div><a href="#" target="_self">T Magazine</div>
-          <div><a href="#" target="_self">Real Estate</div>
-          <div><a href="#" target="_self">Video</div>
+          <div class="split"><a href="#" target="_self" class="nav">World</div>
+          <div class="split"><a href="#" target="_self" class="nav">U.S.</div>
+          <div class="split"><a href="#" target="_self" class="nav">Politics</div>
+          <div class="split"><a href="#" target="_self" class="nav">N.Y.</div>
+          <div class="split"><a href="#" target="_self" class="nav">Business</div>
+          <div class="split"><a href="#" target="_self" class="nav">Opinion</div>
+          <div class="split"><a href="#" target="_self" class="nav">Tech</div>
+          <div class="split"><a href="#" target="_self" class="nav">Science</div>
+          <div class="split"><a href="#" target="_self" class="nav">Health</div>
+          <div class="split"><a href="#" target="_self" class="nav">Sports</div>
+          <div class="split"><a href="#" target="_self" class="nav">Arts</div>
+          <div class="split"><a href="#" target="_self" class="nav">Style</div>
+          <div class="split"><a href="#" target="_self" class="nav">Food</div>
+          <div class="split"><a href="#" target="_self" class="nav">Style</div>
+          <div class="split"><a href="#" target="_self" class="nav">Travel</div>
+          <div class="split"><a href="#" target="_self" class="nav">Magazine</div>
+          <div class="split"><a href="#" target="_self" class="nav">T Magazine</div>
+          <div class="split"><a href="#" target="_self" class="nav">Real Estate</div>
+          <div class="split"><a href="#" target="_self" class="nav">Video</div>
       </nav>
     </div>
 
@@ -184,21 +174,19 @@
                               <div class="author">By GEORGE YANCY and DAVID HAEKWON KIM</div>
                               <div class="content">Often hoodwinked by the label of the "model minority," we must resist the stereotype of Asian passivity.</div>
                               <ul class="opinion-list">
-                                <li class="opinion-link-1"<a href="#" target="_self"><span style="font-size: 12px">Blow: With Ben Carson, the Doctor is Always</span></a></li>
-                                <li class="opinion-link"<a href="#" target="_self"><span style="font-size: 12px">Cohen: Indifference Kills</span></a></li>
-                                <li class="opinion-link"<a href="#" target="_self"><span style="font-size: 12px">Collins: Too Many Bushes</span></a></li>
-                                <li class="opinion-link"<a href="#" target="_self"><span style="font-size: 12px">Kristof: 3 Peerless Republicans for President</span></a></li>
+                                <li class="opinion-link-1"<a href="#" target="_self"><a href="#" target="_self"><span style="font-size: 12px">Blow: With Ben Carson, the Doctor is Always</span></a></li>
+                                <li class="opinion-link"<a href="#" target="_self"><a href="#" target="_self"><span style="font-size: 12px">Cohen: Indifference Kills</span></a></li>
+                                <li class="opinion-link"<a href="#" target="_self"><a href="#" target="_self"><span style="font-size: 12px">Collins: Too Many Bushes</span></a></li>
+                                <li class="opinion-link"<a href="#" target="_self"><a href="#" target="_self"><span style="font-size: 12px">Kristof: 3 Peerless Republicans for President</span></a></li>
                               </ul>
                           </article>
                       </div>
                   </div>
-                  <!-- <hr color="#CFCFCF" size="5"/> -->
                   <div class="rs-article-2">
                       <header class="watching-headline"><a href="#" target="_self">Watching</a></header>
-                      <hr color="#BFBFBF" size="1"/>
                       <div class="divide">
                           <time class="one-hour" datetime="2015-10-8 19:30-0500">1h</time>
-                          <figure class="floated-image"> &nbsp&nbsp&nbsp <img src="NYT_images/meteor_pic.png">
+                          <figure class=""> &nbsp&nbsp&nbsp <img src="NYT_images/meteor_pic.png" class="pic-width">
                               <figcaption class="watching-pic-citation">ASSOCIATED PRESS PHOTO/SCANPIX, P-M HEDEN</figcaption>
                               <figcaption class="watching-description">The annual <a href="#" target="_self"><b>Draconid meteor shower</b></a> peaks Thursday night and is likely to be helped by good visibility and a</figcaption>
                           </figure>
@@ -211,15 +199,3 @@
   </div>
 </body>
 </html>
-
-<!-- <div class="input-option">
-  <div>
-    <div><input type="text" class="username" placeholder="Username"></div>
-    <div><input type="text" class="password" placeholder="Password"></div>
-    <div><input type="submit" class="styled" value="LOG IN"></div>
-  </div>
-</div> -->
-
-<!-- <div class="logout-option">
-    <input type="button" value="LOG OUT" class="styled" />
-</div> -->

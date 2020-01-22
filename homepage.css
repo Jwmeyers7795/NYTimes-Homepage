@@ -8,7 +8,7 @@ a {
     color: #000000;
 }
 a:hover {
-    color: #818181;
+    color: #666666;
 }
 .page {
     max-width: 1270px;
@@ -16,9 +16,10 @@ a:hover {
 }
 .wrapper {
     margin: 0 25px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .menu-list {
+    padding-top: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +37,11 @@ a:hover {
 .option-three {
     padding-right: 25px;
 }
+.option-four {
+    padding-top: 5px;
+}
 .styled {
+    cursor: pointer;
     border: 0;
     line-height: 2;
     padding: 2px 8px;
@@ -66,22 +71,27 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
-}
-.separator {
-    position: relative;
-    bottom: 6px;
+    border-top: 1px solid #E0E3E7;
 }
 .sub-header {
     font-size: 12px;
     font-family: Times New Roman;
 }
 .nav-sections {
-    padding-top: 10px;
+    padding-top: 5px;
     border-top: 1px solid #E0E3E7;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
     font-family: arial;
+    font-weight: 500;
+}
+.nav:hover {
+    color: black;
+}
+.split {
+    padding: 5px 4px;
+    border-radius: 5px;
 }
 @media screen and (max-width: 1000px) {
     .nav-sections {
@@ -119,7 +129,7 @@ a:hover {
         min-width: 190px;
     }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 740px) {
   .ls-main-articles-container {
         display: none;
   }
@@ -194,7 +204,7 @@ a:hover {
         padding-right: 0;
     }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 740px) {
     .c-main-articles-container {
         width: 100%;
         /* min-width: 400px; */
@@ -321,11 +331,26 @@ a:hover {
     font-weight: 700;
     font-family: TimesNew Roman;
 }
-.watching-headline {
-    margin: 6px 0;
-    font-size: 17px;
-    font-weight: 700;
-    font-family: Gill Sans;
+@media screen and (min-width: 1101px) {
+    .watching-headline {
+        margin: 6px 0;
+        padding-bottom: 6px;
+        font-size: 17px;
+        font-weight: 700;
+        font-family: Gill Sans;
+        border-bottom: 1px solid #BFBFBF;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .watching-headline {
+        margin: 6px 0;
+        padding-bottom: 6px;
+        margin-left: 10px;
+        font-size: 17px;
+        font-weight: 700;
+        font-family: Gill Sans;
+        border-bottom: 1px solid #BFBFBF;
+    }
 }
 .divide {
     margin: 10px 0 0 20px;
@@ -337,13 +362,13 @@ a:hover {
     color: #6B6A6A;
 }
 .watching-pic-citation {
-    margin-left: 115px;
+    text-align: center;
     font-size: 9px;
     font-family: Times New Roman;
     color: #D1D1D1;
 }
 .watching-description {
-    margin: 7px 0 0 23px;
+    margin-top: 5px;
     font-size: 12px;
     font-family: arial;
 }
