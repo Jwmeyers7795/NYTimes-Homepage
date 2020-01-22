@@ -1,2 +1,2 @@
 # NYTimes-Homepage
-Static replica of a NYTimes Homepage 
+Replica of responsive New York Times Homepage and Login Page
